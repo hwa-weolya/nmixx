@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10110f">
+  <meta name="description" content="NMIXX와 NSWER의 순간을 모으는 비공식 팬 페이지.">
+  <title>NMIXX — A little archive for NSWER</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <a class="wordmark" href="#top" aria-label="NMIXX 홈">NMIXX<span>.</span></a>
+    <nav class="desktop-nav" aria-label="주요 메뉴">
+      <a href="#members">Meet NMIXX</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="#music">Music</a>
+      <a href="#story">Our story</a>
+      <a href="#official">Official links</a>
+    </nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
+      <span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
+      <span class="menu-label">Menu</span>
+    </button>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="모바일 메뉴" inert>
+      <a href="#members">Meet NMIXX</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="#music">Music</a>
+      <a href="#story">Our story</a>
+      <a href="#official">Official links</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="hero-topline">A little archive for NSWER</p>
+      <div class="hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow">The many, the one</p>
+          <h1 id="hero-title">NMIXX</h1>
+          <p class="hero-subtitle">서로 다른 목소리가 만나<br>우리만의 장면이 되는 순간.</p>
+        </div>
+        <span class="scroll-cue" aria-hidden="true">SCROLL TO DISCOVER</span>
+      </div>
+    </section>
+
+    <section class="members" id="members">
+      <div class="section-heading reveal">
+        <div><p>01 / SIX IN THE MIX</p><h2>Meet NMIXX</h2></div>
+        <span>One team, many colors.</span>
+      </div>
+      <div class="member-explorer reveal">
+        <div class="member-selector" role="group" aria-label="멤버 프로필 선택">
+          <button class="member-tab" type="button" data-member="0" aria-pressed="true" aria-controls="member-profile"><span class="member-tab-index">01</span><span class="member-tab-name">LILY</span><span class="member-tab-arrow" aria-hidden="true">↗</span></button>
+          <button class="member-tab" type="button" data-member="1" aria-pressed="false" aria-controls="member-profile"><span class="member-tab-index">02</span><span class="member-tab-name">HAEWON</span><span class="member-tab-arrow" aria-hidden="true">↗</span></button>
+          <button class="member-tab" type="button" data-member="2" aria-pressed="false" aria-controls="member-profile"><span class="member-tab-index">03</span><span class="member-tab-name">SULLYOON</span><span class="member-tab-arrow" aria-hidden="true">↗</span></button>
+          <button class="member-tab" type="button" data-member="3" aria-pressed="false" aria-controls="member-profile"><span class="member-tab-index">04</span><span class="member-tab-name">BAE</span><span class="member-tab-arrow" aria-hidden="true">↗</span></button>
+          <button class="member-tab" type="button" data-member="4" aria-pressed="false" aria-controls="member-profile"><span class="member-tab-index">05</span><span class="member-tab-name">JIWOO</span><span class="member-tab-arrow" aria-hidden="true">↗</span></button>
+          <button class="member-tab" type="button" data-member="5" aria-pressed="false" aria-controls="member-profile"><span class="member-tab-index">06</span><span class="member-tab-name">KYUJIN</span><span class="member-tab-arrow" aria-hidden="true">↗</span></button>
+        </div>
+        <article class="member-profile" id="member-profile" aria-live="polite" aria-atomic="true">
+          <img class="member-image" id="member-image" alt="LILY 프로필 사진">
+          <div class="member-profile-copy">
+            <p class="member-profile-index" id="member-index">NMIXX MEMBER 01</p>
+            <h3 class="member-profile-name" id="member-name">LILY</h3>
+            <p class="member-profile-native" id="member-native">릴리</p>
+              <p class="member-profile-real-name" id="member-real-name">LILY</p>
+            <div class="member-profile-facts">
+              <p class="member-profile-fact"><span>BIRTHDAY</span><time id="member-birthday" datetime="2002-10-17">2002.10.17</time></p>
+              <p class="member-profile-fact"><span>NATIONALITY</span><span id="member-nationality">Korean-Australian</span></p>
+              <p class="member-profile-fact"><span>POSITION</span><span id="member-position">Vocalist · Korean-English</span></p>
+            </div>
+            <p class="member-profile-intro" id="member-intro">한국어와 영어를 오가며 곡에 힘 있는 보컬 컬러를 더합니다.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="intro" id="story">
+      <div class="intro-index reveal"><span>02 / A PLACE TO RETURN</span>FOR NSWER, WITH LOVE</div>
+      <div class="intro-copy reveal">
+        <h2>각자의 색으로 빛나고,<br><em>함께일 때 더 선명해지는</em><br>여섯 개의 이야기.</h2>
+        <p class="intro-note">NMIXX와 NSWER가 함께 만들어가는 순간을 천천히 모아두는 작은 아카이브입니다. 좋아하는 장면을 발견하고, 오래 기억해요.</p>
+      </div>
+    </section>
+
+
+    <section class="archive music-section" id="music">
+      <div class="section-heading reveal">
+        <div><p>04 / THE NMIXX SOUND</p><h2>Records & tracks</h2></div>
+        <span>음반을 선택해 수록곡을 살펴보세요.</span>
+      </div>
+      <div class="album-browser reveal">
+        <div class="album-picker" id="album-picker" role="list" aria-label="NMIXX 음반 전체"></div>
+        <article class="album-detail" aria-live="polite" aria-atomic="true">
+          <div class="album-art album-art--serenade" id="album-art" aria-label="Heavy Serenade 앨범 아트">
+            <img class="album-cover-image" id="album-cover-image" src="https://d1meds70430yck.cloudfront.net/artists/nmixx/albums/1778468916611-2fcfcbe5.jpg" alt="Heavy Serenade 앨범 커버">
+            <span class="album-art-overline" id="album-art-overline">NMIXX / 1ST ALBUM</span>
+            <strong id="album-art-title">HEAVY<br>SERENADE</strong>
+            <span class="album-art-mark">NSWER ARCHIVE / 01</span>
+          </div>
+          <div class="album-info">
+            <p class="album-info-index" id="album-release">RELEASE / 2026.05.11</p>
+            <h3><a id="album-title" href="https://open.spotify.com/search/NMIXX%20Heavy%20Serenade" target="_blank" rel="noreferrer">Heavy Serenade</a></h3>
+            <p id="album-description">여섯 개의 심장 박동이 하나의 리듬으로 이어지는 첫 정규 앨범.</p>
+            <ol class="track-list" id="track-list" aria-label="수록곡"></ol>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="archive official-section" id="official">
+      <div class="section-heading reveal">
+        <div><p>05 / OFFICIAL CHANNELS</p><h2>Beyond this page</h2></div>
+        <span>공식 콘텐츠와 소식은 공식 채널에서 확인하세요.</span>
+      </div>
+      <div class="archive-grid">
+        <a class="archive-link reveal" href="https://nmixx.jype.com/" target="_blank" rel="noreferrer">
+          <span class="archive-number">01 — JYP ENTERTAINMENT</span><span class="archive-name">Official</span><span class="archive-description">NMIXX 공식 웹사이트</span><span class="archive-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="archive-link reveal" href="https://www.youtube.com/c/NMIXXOfficial" target="_blank" rel="noreferrer">
+          <span class="archive-number">02 — WATCH THE MOMENTS</span><span class="archive-name">YouTube</span><span class="archive-description">공식 영상과 무대</span><span class="archive-arrow" aria-hidden="true">↗</span>
+        </a>
+        <a class="archive-link reveal" href="https://www.instagram.com/nmixx_official/" target="_blank" rel="noreferrer">
+          <span class="archive-number">03 — FOLLOW ALONG</span><span class="archive-name">Instagram</span><span class="archive-description">NMIXX 공식 인스타그램</span><span class="archive-arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-mark" href="#top">NMIXX<span>.</span></a>
+    <p>비공식 팬 페이지입니다. 사진 및 공식 콘텐츠의 권리는 각 권리자에게 있습니다.<br><a href="https://nmixx.jype.com/" target="_blank" rel="noreferrer">NMIXX Official</a></p>
+    <p>MADE WITH LOVE, FOR NSWER</p>
+  </footer>
+
+  <script src="js/site.js" defer></script>
+</body>
+</html>
