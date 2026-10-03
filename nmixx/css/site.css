@@ -141,7 +141,6 @@ h1 {
   writing-mode: vertical-rl;
 }
 .scroll-cue::after { width: 1px; height: 58px; background: var(--acid); content: ""; }
-
 .intro {
   display: grid;
   grid-template-columns: minmax(140px, .7fr) minmax(0, 1.3fr);
@@ -163,7 +162,6 @@ h1 {
 }
 .intro h2 em { color: #707861; font-style: normal; }
 .intro-note { max-width: 420px; margin: 28px 0 0; color: #65675f; font-size: .88rem; line-height: 1.9; word-break: keep-all; }
-
 .archive { padding: 13vh 6.2vw 15vh; }
 .section-heading {
   display: flex;
@@ -357,12 +355,12 @@ button.album-option-name { width: 100%; padding: 0; border: 0; background: trans
   color: var(--ink);
   transition: background-color .35s ease;
 }
-.members.member-theme--lily { background: #c16a45; }
-.members.member-theme--haewon { background: #62a2c0; }
-.members.member-theme--sullyoon { background: #a28b5f; }
-.members.member-theme--bae { background: #c08330; }
-.members.member-theme--jiwoo { background: #b65c78; }
-.members.member-theme--kyujin { background: #7286bf; }
+.members.member-theme--lily { background: #A9DDF2; }
+.members.member-theme--haewon { background: #F2F0E8; }
+.members.member-theme--sullyoon { background: #9BAFE0; }
+.members.member-theme--bae { background: #F7DFA0; }
+.members.member-theme--jiwoo { background: #F2A7AE; }
+.members.member-theme--kyujin { background: #E9B4D0; }
 .members .section-heading { border-color: rgba(16,17,15,.25); }
 .members .section-heading p { color: rgba(16,17,15,.82); }
 .members .section-heading > span { color: rgba(16,17,15,.82); }

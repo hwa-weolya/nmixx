@@ -42,20 +42,20 @@
   ];
   const memberRealNames = ["Lily Jin Morrow", "Oh Hae-won", "Seol Yoon-a", "Bae Jin-sol", "Kim Ji-woo", "Jang Gyu-jin"];
   const memberPositions = [
-    "Vocalist · Korean-English",
+    "Vocalist",
     "Leader · Vocalist",
     "Vocalist",
     "Vocalist · Performer",
     "Rapper · Vocalist · Dancer",
     "Vocalist · Rapper · Dancer · Maknae"
   ];
-  const memberIntros = [
-    "한국어와 영어를 오가며 곡에 힘 있는 보컬 컬러를 더합니다.",
-    "리더로서 팀의 중심을 잡고 안정적인 보컬로 무대를 이끕니다.",
-    "맑은 음색과 섬세한 표현으로 곡의 감정을 채웁니다.",
-    "낮은 음색과 리듬감 있는 퍼포먼스로 무대에 개성을 더합니다.",
-    "랩과 춤, 보컬을 넘나드는 에너지로 퍼포먼스를 넓힙니다.",
-    "보컬·랩·댄스를 고루 소화하는 NMIXX의 막내입니다."
+  const memberMBTIS = [
+    "ENFP",
+    "ESTP",
+    "ISFP",
+    "ENFP",
+    "ESFP",
+    "ESFJ"
   ];
   const memberButtons = [...document.querySelectorAll(".member-tab")];
   const memberImage = document.querySelector("#member-image");
@@ -63,7 +63,7 @@
   const memberNative = document.querySelector("#member-native");
   const memberRealName = document.querySelector("#member-real-name");
   const memberPosition = document.querySelector("#member-position");
-  const memberIntro = document.querySelector("#member-intro");
+  const memberMBTI = document.querySelector("#member-mbti");
   const memberIndex = document.querySelector("#member-index");
   const memberBirthday = document.querySelector("#member-birthday");
   const memberNationality = document.querySelector("#member-nationality");
@@ -80,7 +80,7 @@
     memberNative.textContent = profile.native;
     memberRealName.textContent = memberRealNames[index];
     memberPosition.textContent = memberPositions[index];
-    memberIntro.textContent = memberIntros[index];
+    memberMBTI.textContent = memberMBTIS[index];
     memberIndex.textContent = `NMIXX MEMBER ${String(index + 1).padStart(2, "0")}`;
     memberBirthday.dateTime = profile.date;
     memberBirthday.textContent = profile.birthday;
