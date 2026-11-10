@@ -4,53 +4,69 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#10110f">
-  <meta name="description" content="NMIXX의 멤버 사진과 앨범 아트를 모은 NSWER 갤러리.">
-  <title>Gallery — NMIXX for NSWER</title>
+  <meta name="description" content="NMIXX의 멤버 사진과 앨범 아트를 모은 NSWER 갤러리." data-i18n-content="gallery.description">
+  <title data-i18n="gallery.pageTitle">Gallery — NMIXX for NSWER</title>
+  <link rel="icon" href="nmixx-icon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=Gowun+Batang:wght@400;700&family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
   <header class="site-header" id="site-header">
-    <a class="wordmark" href="index.html#top" aria-label="NMIXX 홈">NMIXX<span>.</span></a>
-    <nav class="desktop-nav" aria-label="주요 메뉴">
-      <a href="index.html#members">Meet NMIXX</a>
-      <a href="gallery.html" aria-current="page">Gallery</a>
-      <a href="index.html#music">Music</a>
-      <a href="index.html#story">Our story</a>
-      <a href="index.html#official">Official links</a>
+    <a class="wordmark" href="index.html#top" aria-label="NMIXX 홈" data-i18n-aria="site.home"><img src="nmixx-wordmark.svg" alt=""></a>
+    <nav class="desktop-nav" aria-label="주요 메뉴" data-i18n-aria="nav.label">
+      <a href="index.html#story" data-i18n="nav.story">Our story</a>
+      <a href="index.html#members" data-i18n="nav.members">Meet NMIXX</a>
+      <a href="gallery.html" aria-current="page" data-i18n="nav.gallery">Gallery</a>
+      <a href="index.html#music" data-i18n="nav.music">Music</a>
+      <a href="index.html#videos" data-i18n="nav.videos">공식 영상</a>
+      <a href="index.html#official" data-i18n="nav.official">Official links</a>
     </nav>
+    <div class="language-picker" data-language-picker>
+      <span class="visually-hidden" data-i18n="site.language">언어 선택</span>
+      <button class="language-trigger" type="button" data-language-trigger aria-haspopup="listbox" aria-expanded="false" aria-controls="language-menu" aria-label="언어 선택" data-i18n-aria="site.language">
+        <span data-language-current>한국어</span>
+        <svg aria-hidden="true" viewBox="0 0 12 12" focusable="false"><path d="m2.5 4.5 3.5 3 3.5-3"/></svg>
+      </button>
+      <div class="language-menu" id="language-menu" role="listbox" aria-label="언어 선택" data-i18n-aria="site.language" hidden>
+        <button class="language-option" type="button" role="option" tabindex="-1" data-language-option="ko" data-language-name="한국어" aria-selected="true"><span class="language-option-code">KO</span><span class="language-option-name">한국어</span><svg aria-hidden="true" viewBox="0 0 16 16" focusable="false"><path d="m3 8 3 3 7-7"/></svg></button>
+        <button class="language-option" type="button" role="option" tabindex="-1" data-language-option="en" data-language-name="English" aria-selected="false"><span class="language-option-code">EN</span><span class="language-option-name">English</span><svg aria-hidden="true" viewBox="0 0 16 16" focusable="false"><path d="m3 8 3 3 7-7"/></svg></button>
+        <button class="language-option" type="button" role="option" tabindex="-1" data-language-option="ja" data-language-name="日本語" aria-selected="false"><span class="language-option-code">JA</span><span class="language-option-name">日本語</span><svg aria-hidden="true" viewBox="0 0 16 16" focusable="false"><path d="m3 8 3 3 7-7"/></svg></button>
+      </div>
+    </div>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
-      <span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
-      <span class="menu-label">Menu</span>
+      <span class="menu-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="menu-label visually-hidden" data-i18n="menu.open">Menu</span>
     </button>
-    <nav class="mobile-nav" id="mobile-nav" aria-label="모바일 메뉴" inert>
-      <a href="index.html#members">Meet NMIXX</a>
-      <a href="gallery.html" aria-current="page">Gallery</a>
-      <a href="index.html#music">Music</a>
-      <a href="index.html#story">Our story</a>
-      <a href="index.html#official">Official links</a>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="모바일 메뉴" data-i18n-aria="nav.mobileLabel" inert>
+      <a href="index.html#story" data-i18n="nav.story">Our story</a>
+      <a href="index.html#members" data-i18n="nav.members">Meet NMIXX</a>
+      <a href="gallery.html" aria-current="page" data-i18n="nav.gallery">Gallery</a>
+      <a href="index.html#music" data-i18n="nav.music">Music</a>
+      <a href="index.html#videos" data-i18n="nav.videos">공식 영상</a>
+      <a href="index.html#official" data-i18n="nav.official">Official links</a>
     </nav>
   </header>
 
+  <!-- 이미지 데이터베이스와 앨범 커버 정보를 갤러리에 연결하고, 캡션을 사진과 함께 표시합니다. -->
   <main class="gallery-page">
     <section class="archive gallery-section" id="gallery">
       <div class="section-heading reveal">
-        <div><p>NSWER ARCHIVE / 01</p><h2>Gallery</h2></div>
-        <span>멤버와 함께한 순간을 모았습니다.</span>
+        <div><p data-i18n="gallery.index">NSWER ARCHIVE / 01</p><h2 data-i18n="gallery.title">Gallery</h2></div>
+        <span data-i18n="gallery.subtitle">멤버와 함께한 순간을 모았습니다.</span>
       </div>
       <div class="gallery-toolbar reveal">
-        <div class="gallery-filters" role="group" aria-label="갤러리 필터">
-          <button class="gallery-filter" type="button" data-gallery-filter="all" aria-pressed="true">ALL <span>42</span></button>
-          <button class="gallery-filter" type="button" data-gallery-filter="group" aria-pressed="false">GROUP</button>
+        <div class="gallery-filters" role="group" aria-label="갤러리 필터" data-i18n-aria="gallery.filters">
+          <button class="gallery-filter" type="button" data-gallery-filter="all" aria-pressed="true"><span data-i18n="gallery.all">ALL</span><span class="gallery-filter-count">42</span></button>
+          <button class="gallery-filter" type="button" data-gallery-filter="group" aria-pressed="false" data-i18n="gallery.group">GROUP</button>
           <button class="gallery-filter" type="button" data-gallery-filter="member:lily" aria-pressed="false">LILY</button>
           <button class="gallery-filter" type="button" data-gallery-filter="member:haewon" aria-pressed="false">HAEWON</button>
           <button class="gallery-filter" type="button" data-gallery-filter="member:sullyoon" aria-pressed="false">SULLYOON</button>
           <button class="gallery-filter" type="button" data-gallery-filter="member:bae" aria-pressed="false">BAE</button>
           <button class="gallery-filter" type="button" data-gallery-filter="member:jiwoo" aria-pressed="false">JIWOO</button>
           <button class="gallery-filter" type="button" data-gallery-filter="member:kyujin" aria-pressed="false">KYUJIN</button>
-          <button class="gallery-filter" type="button" data-gallery-filter="album" aria-pressed="false">ALBUM ART</button>
+          <button class="gallery-filter" type="button" data-gallery-filter="album" aria-pressed="false" data-i18n="gallery.album">ALBUM ART</button>
         </div>
         <span class="gallery-count" id="gallery-count">30 MOMENTS</span>
       </div>
@@ -167,18 +183,24 @@
         </figure>
       </div>
     </section>
-    <dialog class="gallery-lightbox" id="gallery-lightbox" aria-label="갤러리 이미지">
-      <button class="lightbox-close" type="button" aria-label="닫기" data-lightbox-close>×</button>
+    <!-- 이미지 최적화 서비스의 썸네일을 사용하는 경우에도 대화상자에는 원본 이미지 주소를 사용합니다. -->
+    <dialog class="gallery-lightbox" id="gallery-lightbox" aria-label="갤러리 이미지" data-i18n-aria="gallery.dialog">
+      <button class="lightbox-close" type="button" aria-label="닫기" data-lightbox-close data-i18n-aria="gallery.close">×</button>
       <figure><img id="lightbox-image" alt=""><figcaption id="lightbox-caption"></figcaption></figure>
     </dialog>
   </main>
 
   <footer class="site-footer">
-    <a class="footer-mark" href="index.html#top">NMIXX<span>.</span></a>
-    <p>비공식 팬 갤러리입니다. 사진의 권리는 각 권리자에게 있습니다.<br><a href="index.html">메인으로 돌아가기</a></p>
-    <p>MADE WITH LOVE, FOR NSWER</p>
+    <a class="footer-mark" href="index.html#top" aria-label="NMIXX 홈" data-i18n-aria="site.home"><img src="nmixx-wordmark.svg" alt=""></a>
+    <p data-i18n="footer.disclaimer">비공식 팬 갤러리입니다. 사진의 권리는 각 권리자에게 있습니다.</p>
+    <p data-i18n="footer.signoff">MADE WITH LOVE, FOR NSWER</p>
   </footer>
 
+  <script src="js/member-data.js" defer></script>
+  <script src="js/gallery-data.js" defer></script>
+  <script src="js/album-data.js" defer></script>
+  <script src="js/video-data.js" defer></script>
+  <script src="js/language-data.js" defer></script>
   <script src="js/site.js" defer></script>
 </body>
 </html>
